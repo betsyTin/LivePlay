@@ -1,0 +1,21 @@
+//
+//  livePlay.pch
+//  LivePlay
+//
+//  Created by Betsy on 2016/11/5.
+//  Copyright © 2016年 betsy. All rights reserved.
+//
+
+#ifndef livePlay_pch
+#define livePlay_pch
+
+#import "Masonry.h"
+#import "BZYMacros.h"
+#import "YYKit.h"
+#import "APIConfig.h"
+#import "HttpTool.h"
+#import "MJExtensionConfig.h"
+#import "MJExtension.h"
+#import "UIImageView+SDWebImage.h"
+
+#endif /* livePlay_pch */
