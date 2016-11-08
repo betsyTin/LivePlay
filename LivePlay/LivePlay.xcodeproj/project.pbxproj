@@ -38,6 +38,22 @@
 		4570B5131DCC86D400CA3353 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4570B50C1DCC86D400CA3353 /* ViewController.m */; };
 		4574E2501DCF57B2007598EA /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4574E24F1DCF57B2007598EA /* HttpTool.m */; };
 		4574E2531DCF57D2007598EA /* UIImageView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4574E2521DCF57D2007598EA /* UIImageView+SDWebImage.m */; };
+		45E4FFD31DD1A95E003F041E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E4FFD21DD1A95E003F041E /* AVFoundation.framework */; };
+		45E4FFD51DD1B1A0003F041E /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E4FFD41DD1B1A0003F041E /* IJKMediaFramework.framework */; };
+		45E4FFD71DD1B1EA003F041E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E4FFD61DD1B1EA003F041E /* AudioToolbox.framework */; };
+		45E4FFD91DD1B1FE003F041E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E4FFD81DD1B1FE003F041E /* CoreGraphics.framework */; };
+		45E4FFDB1DD1B20C003F041E /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E4FFDA1DD1B20C003F041E /* CoreVideo.framework */; };
+		45E4FFDD1DD1B224003F041E /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E4FFDC1DD1B224003F041E /* libbz2.tbd */; };
+		45E4FFDF1DD1B232003F041E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E4FFDE1DD1B232003F041E /* libz.tbd */; };
+		45E4FFE11DD1B250003F041E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E4FFE01DD1B250003F041E /* MobileCoreServices.framework */; };
+		45E4FFE31DD1B262003F041E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E4FFE21DD1B262003F041E /* OpenGLES.framework */; };
+		45E4FFE51DD1B274003F041E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E4FFE41DD1B274003F041E /* QuartzCore.framework */; };
+		45E4FFE71DD1B286003F041E /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E4FFE61DD1B286003F041E /* VideoToolbox.framework */; };
+		45E4FFEA1DD1B371003F041E /* BZYPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E4FFE91DD1B371003F041E /* BZYPlayerViewController.m */; };
+		45E4FFEF1DD1D551003F041E /* BZYLiveChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E4FFED1DD1D551003F041E /* BZYLiveChatViewController.m */; };
+		45E4FFF01DD1D551003F041E /* BZYLiveChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E4FFEE1DD1D551003F041E /* BZYLiveChatViewController.xib */; };
+		45E4FFF51DD207A6003F041E /* BZYLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E4FFF41DD207A6003F041E /* BZYLocationManager.m */; };
+		45E4FFF71DD20873003F041E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E4FFF61DD20873003F041E /* CoreLocation.framework */; };
 		48B0D6BB047C572A990660B9 /* libPods-LivePlay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F8B9C45BB6AE8A490280ED /* libPods-LivePlay.a */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +115,25 @@
 		4574E24F1DCF57B2007598EA /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
 		4574E2511DCF57D2007598EA /* UIImageView+SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SDWebImage.h"; sourceTree = "<group>"; };
 		4574E2521DCF57D2007598EA /* UIImageView+SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SDWebImage.m"; sourceTree = "<group>"; };
+		45E4FFD21DD1A95E003F041E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		45E4FFD41DD1B1A0003F041E /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		45E4FFD61DD1B1EA003F041E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		45E4FFD81DD1B1FE003F041E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		45E4FFDA1DD1B20C003F041E /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		45E4FFDC1DD1B224003F041E /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		45E4FFDE1DD1B232003F041E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		45E4FFE01DD1B250003F041E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		45E4FFE21DD1B262003F041E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		45E4FFE41DD1B274003F041E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		45E4FFE61DD1B286003F041E /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		45E4FFE81DD1B371003F041E /* BZYPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZYPlayerViewController.h; sourceTree = "<group>"; };
+		45E4FFE91DD1B371003F041E /* BZYPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZYPlayerViewController.m; sourceTree = "<group>"; };
+		45E4FFEC1DD1D551003F041E /* BZYLiveChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZYLiveChatViewController.h; sourceTree = "<group>"; };
+		45E4FFED1DD1D551003F041E /* BZYLiveChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZYLiveChatViewController.m; sourceTree = "<group>"; };
+		45E4FFEE1DD1D551003F041E /* BZYLiveChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BZYLiveChatViewController.xib; sourceTree = "<group>"; };
+		45E4FFF31DD207A6003F041E /* BZYLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZYLocationManager.h; sourceTree = "<group>"; };
+		45E4FFF41DD207A6003F041E /* BZYLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZYLocationManager.m; sourceTree = "<group>"; };
+		45E4FFF61DD20873003F041E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7D22F960DD9305343B058F78 /* Pods-LivePlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LivePlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LivePlay/Pods-LivePlay.debug.xcconfig"; sourceTree = "<group>"; };
 		80F8B9C45BB6AE8A490280ED /* libPods-LivePlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LivePlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76A7AFDE26C783E34CA13F5 /* Pods-LivePlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LivePlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-LivePlay/Pods-LivePlay.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +144,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45E4FFF71DD20873003F041E /* CoreLocation.framework in Frameworks */,
+				45E4FFE71DD1B286003F041E /* VideoToolbox.framework in Frameworks */,
+				45E4FFE51DD1B274003F041E /* QuartzCore.framework in Frameworks */,
+				45E4FFE31DD1B262003F041E /* OpenGLES.framework in Frameworks */,
+				45E4FFE11DD1B250003F041E /* MobileCoreServices.framework in Frameworks */,
+				45E4FFDF1DD1B232003F041E /* libz.tbd in Frameworks */,
+				45E4FFDD1DD1B224003F041E /* libbz2.tbd in Frameworks */,
+				45E4FFDB1DD1B20C003F041E /* CoreVideo.framework in Frameworks */,
+				45E4FFD91DD1B1FE003F041E /* CoreGraphics.framework in Frameworks */,
+				45E4FFD71DD1B1EA003F041E /* AudioToolbox.framework in Frameworks */,
+				45E4FFD51DD1B1A0003F041E /* IJKMediaFramework.framework in Frameworks */,
+				45E4FFD31DD1A95E003F041E /* AVFoundation.framework in Frameworks */,
 				48B0D6BB047C572A990660B9 /* libPods-LivePlay.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,6 +238,8 @@
 		4570B4FA1DCC86D400CA3353 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				45E4FFF11DD20792003F041E /* Category */,
+				45E4FFF21DD20792003F041E /* Tools */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -377,8 +426,29 @@
 				452661B01DCEF2F9005D5B96 /* BZYNearViewController.h */,
 				452661B11DCEF2F9005D5B96 /* BZYNearViewController.m */,
 				452661B21DCEF2F9005D5B96 /* BZYNearViewController.xib */,
+				45E4FFE81DD1B371003F041E /* BZYPlayerViewController.h */,
+				45E4FFE91DD1B371003F041E /* BZYPlayerViewController.m */,
+				45E4FFEC1DD1D551003F041E /* BZYLiveChatViewController.h */,
+				45E4FFED1DD1D551003F041E /* BZYLiveChatViewController.m */,
+				45E4FFEE1DD1D551003F041E /* BZYLiveChatViewController.xib */,
 			);
 			path = viewController;
+			sourceTree = "<group>";
+		};
+		45E4FFF11DD20792003F041E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		45E4FFF21DD20792003F041E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				45E4FFF31DD207A6003F041E /* BZYLocationManager.h */,
+				45E4FFF41DD207A6003F041E /* BZYLocationManager.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		4A6633F89D6D8C1EDB9924B4 /* Pods */ = {
@@ -393,6 +463,18 @@
 		4C43A1EDDB6ABB15AD76EB3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				45E4FFF61DD20873003F041E /* CoreLocation.framework */,
+				45E4FFE61DD1B286003F041E /* VideoToolbox.framework */,
+				45E4FFE41DD1B274003F041E /* QuartzCore.framework */,
+				45E4FFE21DD1B262003F041E /* OpenGLES.framework */,
+				45E4FFE01DD1B250003F041E /* MobileCoreServices.framework */,
+				45E4FFDE1DD1B232003F041E /* libz.tbd */,
+				45E4FFDC1DD1B224003F041E /* libbz2.tbd */,
+				45E4FFDA1DD1B20C003F041E /* CoreVideo.framework */,
+				45E4FFD81DD1B1FE003F041E /* CoreGraphics.framework */,
+				45E4FFD61DD1B1EA003F041E /* AudioToolbox.framework */,
+				45E4FFD41DD1B1A0003F041E /* IJKMediaFramework.framework */,
+				45E4FFD21DD1A95E003F041E /* AVFoundation.framework */,
 				80F8B9C45BB6AE8A490280ED /* libPods-LivePlay.a */,
 			);
 			name = Frameworks;
@@ -467,6 +549,7 @@
 				452661AA1DCEF2CC005D5B96 /* BZYFocuseViewController.xib in Resources */,
 				452661A51DCECE22005D5B96 /* BZYLaunchViewController.xib in Resources */,
 				4570B4F11DCC856A00CA3353 /* LaunchScreen.storyboard in Resources */,
+				45E4FFF01DD1D551003F041E /* BZYLiveChatViewController.xib in Resources */,
 				4570B4EE1DCC856A00CA3353 /* Assets.xcassets in Resources */,
 				452ADB601DCDC44F00EAD019 /* BZYLiveViewController.xib in Resources */,
 				4570B4EC1DCC856A00CA3353 /* Main.storyboard in Resources */,
@@ -531,12 +614,15 @@
 				4539AF951DCD735300AFCEE3 /* BZYTabBarViewController.m in Sources */,
 				4570B5131DCC86D400CA3353 /* ViewController.m in Sources */,
 				4506BA4E1DD0658800A98173 /* MJExtensionConfig.m in Sources */,
+				45E4FFF51DD207A6003F041E /* BZYLocationManager.m in Sources */,
 				4574E2531DCF57D2007598EA /* UIImageView+SDWebImage.m in Sources */,
+				45E4FFEA1DD1B371003F041E /* BZYPlayerViewController.m in Sources */,
 				452661B71DCF0625005D5B96 /* BZYLiveView.m in Sources */,
 				452A9C011DD01DC2001402D2 /* BZYLiveHandler.m in Sources */,
 				4570B5121DCC86D400CA3353 /* AppDelegate.m in Sources */,
 				4506BA521DD06DD400A98173 /* BZYLiveCell.m in Sources */,
 				452661B31DCEF2F9005D5B96 /* BZYNearViewController.m in Sources */,
+				45E4FFEF1DD1D551003F041E /* BZYLiveChatViewController.m in Sources */,
 				452ADB5B1DCDC42C00EAD019 /* BZYBaseViewController.m in Sources */,
 				452661AE1DCEF2DE005D5B96 /* BZYHotViewController.m in Sources */,
 				452ADB5F1DCDC44F00EAD019 /* BZYLiveViewController.m in Sources */,
@@ -672,6 +758,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = DNL72278HK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LivePlay/Class/Other/livePlay.pch";
 				INFOPLIST_FILE = LivePlay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -688,6 +778,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = DNL72278HK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LivePlay/Class/Other/livePlay.pch";
 				INFOPLIST_FILE = LivePlay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

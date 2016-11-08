@@ -9,6 +9,7 @@
 #import "BZYHotViewController.h"
 #import "BZYLiveHandler.h"
 #import "BZYLiveCell.h"
+#import "BZYPlayerViewController.h"
 
 @interface BZYHotViewController ()
 
@@ -46,6 +47,14 @@ static NSString *indentifier = @"BZYLiveCell.h";
     return 70+SCREEN_WIDTH;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    BZYLiveModel *live = self.dataArray[indexPath.row];
+    BZYPlayerViewController *vc = [[BZYPlayerViewController alloc] init];
+    vc.live = live;
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

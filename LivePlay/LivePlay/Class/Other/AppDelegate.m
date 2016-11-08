@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "BZYTabBarViewController.h"
+#import "BZYLocationManager.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,11 @@
 
     BZYTabBarViewController *mainVC = [[BZYTabBarViewController alloc]init];
     self.window.rootViewController = mainVC;
+    
+    [[BZYLocationManager sharedManager] getGPS:^(NSString *lat, NSString *lon) {
+        
+    }];
+    
     return YES;
 }
 
