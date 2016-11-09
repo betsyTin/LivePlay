@@ -35,7 +35,7 @@
     if (self) {
         _locManager = [[CLLocationManager alloc] init];
         [_locManager setDesiredAccuracy:kCLLocationAccuracyBest];
-        _locManager.distanceFilter = 100;
+        _locManager.distanceFilter = 10;
         _locManager.delegate = self;
         
         if (![CLLocationManager locationServicesEnabled]) {
@@ -60,7 +60,7 @@
     NSString *longitude = [NSString stringWithFormat:@"%@",@(coor.longitude)];
     
     [BZYLocationManager sharedManager].lat = latitude;
-    [BZYLocationManager sharedManager].lat = longitude;
+    [BZYLocationManager sharedManager].lon = longitude;
     
     self.locationBlock(latitude,longitude);
     

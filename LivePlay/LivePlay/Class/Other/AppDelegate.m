@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "BZYTabBarViewController.h"
 #import "BZYLocationManager.h"
+#import "BZYAdvertise.h"
 
 @interface AppDelegate ()
 
@@ -25,6 +26,11 @@
     [[BZYLocationManager sharedManager] getGPS:^(NSString *lat, NSString *lon) {
         
     }];
+    [self.window makeKeyAndVisible];
+    
+    BZYAdvertise *ad = [BZYAdvertise loadAdvertiseView];
+    
+    [self.window addSubview:ad];
     
     return YES;
 }

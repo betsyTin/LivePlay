@@ -7,16 +7,96 @@
 //
 
 #import "BZYNearViewController.h"
+#import "BZYLiveHandler.h"
+#import "BZYNearLiveCell.h"
+#import "BZYPlayerViewController.h"
 
-@interface BZYNearViewController ()
+#define kItemSizeW 100
+#define kMargin 5
+
+@interface BZYNearViewController ()<UICollectionViewDelegateFlowLayout>
+
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
+
+@property (strong, nonatomic) NSArray *dataList;
 
 @end
 
+static NSString *Identifier = @"Identifier";
+
 @implementation BZYNearViewController
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    [collectionView deselectItemAtIndexPath:indexPath animated:YES];
+    
+    BZYPlayerViewController * playerVC = [[BZYPlayerViewController alloc] init];
+    
+    playerVC.live = self.dataList[indexPath.row];
+    
+    [self.navigationController pushViewController:playerVC animated:YES];
+}
+
+//cell将要展示的时候启动动画
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    BZYNearLiveCell * c = (BZYNearLiveCell *)cell;
+    
+    [c showAnimation];
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+
+    
+    NSInteger count = self.collectionView.width / kItemSizeW;
+    NSInteger extraTotal = (self.collectionView.width - kMargin * (count + 1))/count;
+    
+    
+    return CGSizeMake(extraTotal, extraTotal + 20);
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return self.dataList.count;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    BZYNearLiveCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:Identifier forIndexPath:indexPath];
+    
+    cell.live = self.dataList[indexPath.row];
+    
+    return cell;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor lightGrayColor];
+    
+    [self initUI];
+    
+    [self loadData];
+    
+}
+
+- (void)initUI
+{
+    [self.collectionView registerNib:[UINib nibWithNibName:@"BZYNearLiveCell" bundle:nil] forCellWithReuseIdentifier:Identifier];
+}
+
+- (void)loadData
+{
+    [BZYLiveHandler executeGetNearLiveTaskWithSuccess:^(id obj) {
+        
+        NSLog(@"xinxi === %@",obj);
+        
+        self.dataList = obj;
+        
+        [self.collectionView reloadData];
+        
+    } failed:^(id obj) {
+        
+    }];
+
 }
 
 - (void)didReceiveMemoryWarning {

@@ -30,6 +30,12 @@
 		452ADB681DCDC6CD00EAD019 /* BZYNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452ADB671DCDC6CD00EAD019 /* BZYNavViewController.m */; };
 		4539AF951DCD735300AFCEE3 /* BZYTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4539AF941DCD735300AFCEE3 /* BZYTabBarViewController.m */; };
 		4539AF981DCD736900AFCEE3 /* BZYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4539AF971DCD736900AFCEE3 /* BZYTabBar.m */; };
+		456DDFF81DD2DE0C00F4C5DE /* BZYNearLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 456DDFF61DD2DE0C00F4C5DE /* BZYNearLiveCell.m */; };
+		456DDFF91DD2DE0C00F4C5DE /* BZYNearLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 456DDFF71DD2DE0C00F4C5DE /* BZYNearLiveCell.xib */; };
+		456DDFFC1DD30A6800F4C5DE /* BZYADModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 456DDFFB1DD30A6800F4C5DE /* BZYADModel.m */; };
+		456DDFFF1DD30C6800F4C5DE /* BZYAdvertise.m in Sources */ = {isa = PBXBuildFile; fileRef = 456DDFFE1DD30C6800F4C5DE /* BZYAdvertise.m */; };
+		456DE0011DD30C8300F4C5DE /* BZYAdvertise.xib in Resources */ = {isa = PBXBuildFile; fileRef = 456DE0001DD30C8300F4C5DE /* BZYAdvertise.xib */; };
+		456DE0041DD3165A00F4C5DE /* BZYCacheHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 456DE0031DD3165A00F4C5DE /* BZYCacheHelper.m */; };
 		4570B4E31DCC856A00CA3353 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4570B4E21DCC856A00CA3353 /* main.m */; };
 		4570B4EC1DCC856A00CA3353 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4570B4EA1DCC856A00CA3353 /* Main.storyboard */; };
 		4570B4EE1DCC856A00CA3353 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4570B4ED1DCC856A00CA3353 /* Assets.xcassets */; };
@@ -100,6 +106,16 @@
 		4539AF941DCD735300AFCEE3 /* BZYTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZYTabBarViewController.m; sourceTree = "<group>"; };
 		4539AF961DCD736900AFCEE3 /* BZYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZYTabBar.h; sourceTree = "<group>"; };
 		4539AF971DCD736900AFCEE3 /* BZYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZYTabBar.m; sourceTree = "<group>"; };
+		456DDFF51DD2DE0C00F4C5DE /* BZYNearLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZYNearLiveCell.h; sourceTree = "<group>"; };
+		456DDFF61DD2DE0C00F4C5DE /* BZYNearLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZYNearLiveCell.m; sourceTree = "<group>"; };
+		456DDFF71DD2DE0C00F4C5DE /* BZYNearLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BZYNearLiveCell.xib; sourceTree = "<group>"; };
+		456DDFFA1DD30A6800F4C5DE /* BZYADModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZYADModel.h; sourceTree = "<group>"; };
+		456DDFFB1DD30A6800F4C5DE /* BZYADModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZYADModel.m; sourceTree = "<group>"; };
+		456DDFFD1DD30C6800F4C5DE /* BZYAdvertise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZYAdvertise.h; sourceTree = "<group>"; };
+		456DDFFE1DD30C6800F4C5DE /* BZYAdvertise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZYAdvertise.m; sourceTree = "<group>"; };
+		456DE0001DD30C8300F4C5DE /* BZYAdvertise.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BZYAdvertise.xib; sourceTree = "<group>"; };
+		456DE0021DD3165A00F4C5DE /* BZYCacheHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZYCacheHelper.h; sourceTree = "<group>"; };
+		456DE0031DD3165A00F4C5DE /* BZYCacheHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZYCacheHelper.m; sourceTree = "<group>"; };
 		4570B4DE1DCC856A00CA3353 /* LivePlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivePlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4570B4E21DCC856A00CA3353 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4570B4EB1DCC856A00CA3353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -393,6 +409,8 @@
 				4506BA471DD0604400A98173 /* BZYLiveModel.m */,
 				4506BA491DD0607C00A98173 /* BZYCreatorModel.h */,
 				4506BA4A1DD0607C00A98173 /* BZYCreatorModel.m */,
+				456DDFFA1DD30A6800F4C5DE /* BZYADModel.h */,
+				456DDFFB1DD30A6800F4C5DE /* BZYADModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -405,6 +423,12 @@
 				4506BA4F1DD06DD400A98173 /* BZYLiveCell.h */,
 				4506BA501DD06DD400A98173 /* BZYLiveCell.m */,
 				4506BA511DD06DD400A98173 /* BZYLiveCell.xib */,
+				456DDFF51DD2DE0C00F4C5DE /* BZYNearLiveCell.h */,
+				456DDFF61DD2DE0C00F4C5DE /* BZYNearLiveCell.m */,
+				456DDFF71DD2DE0C00F4C5DE /* BZYNearLiveCell.xib */,
+				456DDFFD1DD30C6800F4C5DE /* BZYAdvertise.h */,
+				456DDFFE1DD30C6800F4C5DE /* BZYAdvertise.m */,
+				456DE0001DD30C8300F4C5DE /* BZYAdvertise.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -447,6 +471,8 @@
 			children = (
 				45E4FFF31DD207A6003F041E /* BZYLocationManager.h */,
 				45E4FFF41DD207A6003F041E /* BZYLocationManager.m */,
+				456DE0021DD3165A00F4C5DE /* BZYCacheHelper.h */,
+				456DE0031DD3165A00F4C5DE /* BZYCacheHelper.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -545,8 +571,10 @@
 			files = (
 				4506BA531DD06DD400A98173 /* BZYLiveCell.xib in Resources */,
 				452ADB651DCDC45F00EAD019 /* BZYMeViewController.xib in Resources */,
+				456DDFF91DD2DE0C00F4C5DE /* BZYNearLiveCell.xib in Resources */,
 				452661B41DCEF2F9005D5B96 /* BZYNearViewController.xib in Resources */,
 				452661AA1DCEF2CC005D5B96 /* BZYFocuseViewController.xib in Resources */,
+				456DE0011DD30C8300F4C5DE /* BZYAdvertise.xib in Resources */,
 				452661A51DCECE22005D5B96 /* BZYLaunchViewController.xib in Resources */,
 				4570B4F11DCC856A00CA3353 /* LaunchScreen.storyboard in Resources */,
 				45E4FFF01DD1D551003F041E /* BZYLiveChatViewController.xib in Resources */,
@@ -616,6 +644,7 @@
 				4506BA4E1DD0658800A98173 /* MJExtensionConfig.m in Sources */,
 				45E4FFF51DD207A6003F041E /* BZYLocationManager.m in Sources */,
 				4574E2531DCF57D2007598EA /* UIImageView+SDWebImage.m in Sources */,
+				456DDFFF1DD30C6800F4C5DE /* BZYAdvertise.m in Sources */,
 				45E4FFEA1DD1B371003F041E /* BZYPlayerViewController.m in Sources */,
 				452661B71DCF0625005D5B96 /* BZYLiveView.m in Sources */,
 				452A9C011DD01DC2001402D2 /* BZYLiveHandler.m in Sources */,
@@ -624,8 +653,10 @@
 				452661B31DCEF2F9005D5B96 /* BZYNearViewController.m in Sources */,
 				45E4FFEF1DD1D551003F041E /* BZYLiveChatViewController.m in Sources */,
 				452ADB5B1DCDC42C00EAD019 /* BZYBaseViewController.m in Sources */,
+				456DDFFC1DD30A6800F4C5DE /* BZYADModel.m in Sources */,
 				452661AE1DCEF2DE005D5B96 /* BZYHotViewController.m in Sources */,
 				452ADB5F1DCDC44F00EAD019 /* BZYLiveViewController.m in Sources */,
+				456DDFF81DD2DE0C00F4C5DE /* BZYNearLiveCell.m in Sources */,
 				4506BA4B1DD0607C00A98173 /* BZYCreatorModel.m in Sources */,
 				4506BA481DD0604400A98173 /* BZYLiveModel.m in Sources */,
 				452661A41DCECE22005D5B96 /* BZYLaunchViewController.m in Sources */,
@@ -636,6 +667,7 @@
 				4570B4E31DCC856A00CA3353 /* main.m in Sources */,
 				4574E2501DCF57B2007598EA /* HttpTool.m in Sources */,
 				452A9BFE1DD01BBD001402D2 /* BZYBaseHandle.m in Sources */,
+				456DE0041DD3165A00F4C5DE /* BZYCacheHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

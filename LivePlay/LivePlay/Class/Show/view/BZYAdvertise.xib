@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BZYAdvertise">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hVv-Ac-JDL"/>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJL-kt-Lvq">
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Xku-kd-uKm"/>
+                        <constraint firstAttribute="height" constant="20" id="s8I-h6-6gX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hVv-Ac-JDL" secondAttribute="bottom" id="16U-8H-5zH"/>
+                <constraint firstItem="zJL-kt-Lvq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="2xY-Xo-5n6"/>
+                <constraint firstItem="hVv-Ac-JDL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="OTG-Ug-TSg"/>
+                <constraint firstAttribute="trailing" secondItem="zJL-kt-Lvq" secondAttribute="trailing" constant="10" id="gwO-FT-Kv0"/>
+                <constraint firstItem="hVv-Ac-JDL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="q2C-g6-9lg"/>
+                <constraint firstAttribute="trailing" secondItem="hVv-Ac-JDL" secondAttribute="trailing" id="ueT-Av-FtM"/>
+            </constraints>
+            <connections>
+                <outlet property="advertiseView" destination="hVv-Ac-JDL" id="OTO-mi-e3D"/>
+                <outlet property="timelabel" destination="zJL-kt-Lvq" id="0Eu-AE-vTz"/>
+            </connections>
+            <point key="canvasLocation" x="42.5" y="166.5"/>
+        </view>
+    </objects>
+</document>

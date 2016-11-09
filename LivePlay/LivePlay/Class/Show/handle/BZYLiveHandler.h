@@ -19,4 +19,22 @@
  */
 + (void)executeGetHotLiveTaskWithSuccess:(SuccessBlock)success failed:(FailedBlock)failed;
 
+
+/**
+ 获取附近的直播信息
+
+ @param success 成功
+ @param failed  失败
+ */
++ (void)executeGetNearLiveTaskWithSuccess:(SuccessBlock)success failed:(FailedBlock)failed;
+
+
+/**
+ 获取广告页
+
+ @param success 成功
+ @param failed  失败
+ */
++ (void)executeGetAdvertiseTaskWithSuccess:(SuccessBlock)success failed:(FailedBlock)failed;
+
 @end

@@ -17,5 +17,6 @@
 #import "MJExtensionConfig.h"
 #import "MJExtension.h"
 #import "UIImageView+SDWebImage.h"
+#import "SDWebImageManager.h"
 
 #endif /* livePlay_pch */
