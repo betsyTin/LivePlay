@@ -63,6 +63,11 @@
 		45A1E1391DD5C92D00F03F6D /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A1E11F1DD5C92D00F03F6D /* libWeiboSDK.a */; };
 		45A1E13A1DD5C92D00F03F6D /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 45A1E12A1DD5C92D00F03F6D /* WeiboSDK.bundle */; };
 		45A1E13D1DD5D20E00F03F6D /* BZYLoginHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A1E13C1DD5D20E00F03F6D /* BZYLoginHelper.m */; };
+		45B706751DD6C46900687CDC /* BZYMeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B706741DD6C46900687CDC /* BZYMeView.m */; };
+		45B706771DD6C47C00687CDC /* BZYMeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45B706761DD6C47C00687CDC /* BZYMeView.xib */; };
+		45B706851DD6D2A900687CDC /* BZYPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B706831DD6D2A900687CDC /* BZYPersonViewController.m */; };
+		45B706861DD6D2A900687CDC /* BZYPersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45B706841DD6D2A900687CDC /* BZYPersonViewController.xib */; };
+		45B706891DD6E8F300687CDC /* BZYSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B706881DD6E8F300687CDC /* BZYSetting.m */; };
 		45E4FFD31DD1A95E003F041E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E4FFD21DD1A95E003F041E /* AVFoundation.framework */; };
 		45E4FFD51DD1B1A0003F041E /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E4FFD41DD1B1A0003F041E /* IJKMediaFramework.framework */; };
 		45E4FFD71DD1B1EA003F041E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E4FFD61DD1B1EA003F041E /* AudioToolbox.framework */; };
@@ -197,6 +202,14 @@
 		45A1E12C1DD5C92D00F03F6D /* WeiboUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboUser.h; sourceTree = "<group>"; };
 		45A1E13B1DD5D20E00F03F6D /* BZYLoginHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZYLoginHelper.h; sourceTree = "<group>"; };
 		45A1E13C1DD5D20E00F03F6D /* BZYLoginHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZYLoginHelper.m; sourceTree = "<group>"; };
+		45B706731DD6C46900687CDC /* BZYMeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZYMeView.h; sourceTree = "<group>"; };
+		45B706741DD6C46900687CDC /* BZYMeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZYMeView.m; sourceTree = "<group>"; };
+		45B706761DD6C47C00687CDC /* BZYMeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BZYMeView.xib; sourceTree = "<group>"; };
+		45B706821DD6D2A900687CDC /* BZYPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZYPersonViewController.h; sourceTree = "<group>"; };
+		45B706831DD6D2A900687CDC /* BZYPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZYPersonViewController.m; sourceTree = "<group>"; };
+		45B706841DD6D2A900687CDC /* BZYPersonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BZYPersonViewController.xib; sourceTree = "<group>"; };
+		45B706871DD6E8F300687CDC /* BZYSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZYSetting.h; sourceTree = "<group>"; };
+		45B706881DD6E8F300687CDC /* BZYSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZYSetting.m; sourceTree = "<group>"; };
 		45E4FFD21DD1A95E003F041E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		45E4FFD41DD1B1A0003F041E /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		45E4FFD61DD1B1EA003F041E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -411,6 +424,8 @@
 		4570B5041DCC86D400CA3353 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				45B706871DD6E8F300687CDC /* BZYSetting.h */,
+				45B706881DD6E8F300687CDC /* BZYSetting.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -418,6 +433,9 @@
 		4570B5051DCC86D400CA3353 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				45B706731DD6C46900687CDC /* BZYMeView.h */,
+				45B706741DD6C46900687CDC /* BZYMeView.m */,
+				45B706761DD6C47C00687CDC /* BZYMeView.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -428,6 +446,9 @@
 				45A1E0F91DD5C02500F03F6D /* BZYLoginViewController.h */,
 				45A1E0FA1DD5C02500F03F6D /* BZYLoginViewController.m */,
 				45A1E0FB1DD5C02500F03F6D /* BZYLoginViewController.xib */,
+				45B706821DD6D2A900687CDC /* BZYPersonViewController.h */,
+				45B706831DD6D2A900687CDC /* BZYPersonViewController.m */,
+				45B706841DD6D2A900687CDC /* BZYPersonViewController.xib */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -736,7 +757,9 @@
 				45A1E12D1DD5C92D00F03F6D /* UMSocialLocalizable.strings in Resources */,
 				456DE0011DD30C8300F4C5DE /* BZYAdvertise.xib in Resources */,
 				452661A51DCECE22005D5B96 /* BZYLaunchViewController.xib in Resources */,
+				45B706861DD6D2A900687CDC /* BZYPersonViewController.xib in Resources */,
 				45A1E1311DD5C92D00F03F6D /* UMSCommentInputControlleriPad.xib in Resources */,
+				45B706771DD6C47C00687CDC /* BZYMeView.xib in Resources */,
 				45A1E1301DD5C92D00F03F6D /* UMSCommentInputController.xib in Resources */,
 				45A1E1351DD5C92D00F03F6D /* UMSnsAccountViewController.xib in Resources */,
 				4570B4F11DCC856A00CA3353 /* LaunchScreen.storyboard in Resources */,
@@ -808,10 +831,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4539AF951DCD735300AFCEE3 /* BZYTabBarViewController.m in Sources */,
+				45B706751DD6C46900687CDC /* BZYMeView.m in Sources */,
 				4570B5131DCC86D400CA3353 /* ViewController.m in Sources */,
 				45A1E0FC1DD5C02500F03F6D /* BZYLoginViewController.m in Sources */,
 				4506BA4E1DD0658800A98173 /* MJExtensionConfig.m in Sources */,
 				45E4FFF51DD207A6003F041E /* BZYLocationManager.m in Sources */,
+				45B706891DD6E8F300687CDC /* BZYSetting.m in Sources */,
 				4574E2531DCF57D2007598EA /* UIImageView+SDWebImage.m in Sources */,
 				456DDFFF1DD30C6800F4C5DE /* BZYAdvertise.m in Sources */,
 				4593A6D91DD5830C009C257E /* LFLivePreview.m in Sources */,
@@ -837,6 +862,7 @@
 				452ADB681DCDC6CD00EAD019 /* BZYNavViewController.m in Sources */,
 				452ADB641DCDC45F00EAD019 /* BZYMeViewController.m in Sources */,
 				4570B4E31DCC856A00CA3353 /* main.m in Sources */,
+				45B706851DD6D2A900687CDC /* BZYPersonViewController.m in Sources */,
 				4574E2501DCF57B2007598EA /* HttpTool.m in Sources */,
 				452A9BFE1DD01BBD001402D2 /* BZYBaseHandle.m in Sources */,
 				456DE0041DD3165A00F4C5DE /* BZYCacheHelper.m in Sources */,
