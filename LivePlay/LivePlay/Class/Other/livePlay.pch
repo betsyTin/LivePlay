@@ -18,5 +18,8 @@
 #import "MJExtension.h"
 #import "UIImageView+SDWebImage.h"
 #import "SDWebImageManager.h"
+#import "UMSocial.h"
+#import "UMSocialSinaSSOHandler.h"
+#import "BZYLoginHelper.h"
 
 #endif /* livePlay_pch */

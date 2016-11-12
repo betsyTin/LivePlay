@@ -8,6 +8,6 @@
 
 #import "BZYBaseViewController.h"
 
-@interface BZYFocuseViewController : BZYBaseViewController
+@interface BZYFocuseViewController : UITableViewController
 
 @end

@@ -22,14 +22,40 @@
                         <action selector="closeLaunch:" destination="-1" eventType="touchUpInside" id="XX7-wy-isn"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyX-1k-3EY">
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="北京市" image="launch_map_on">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNj-OG-cfG">
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <state key="normal" title="开始直播" backgroundImage="room_button">
+                        <color key="titleColor" red="1" green="0.62090432380000005" blue="0.12856524250000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="startPlayer:" destination="-1" eventType="touchUpInside" id="ReF-AI-ehe"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="给直播写个标题吧" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bum-zt-NNn">
+                    <color key="textColor" red="1" green="0.62090432380000005" blue="0.12856524250000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="tIk-4V-Yj2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="429-4z-HsI"/>
                 <constraint firstItem="tIk-4V-Yj2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4jw-Ah-NG2"/>
+                <constraint firstItem="vyX-1k-3EY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="6PD-sk-a44"/>
                 <constraint firstItem="yhU-9D-To5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Eyr-P5-bwC"/>
+                <constraint firstItem="bNj-OG-cfG" firstAttribute="centerX" secondItem="Bum-zt-NNn" secondAttribute="centerX" id="Fid-gU-gIw"/>
+                <constraint firstItem="vyX-1k-3EY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Fje-d8-5tl"/>
                 <constraint firstAttribute="trailing" secondItem="tIk-4V-Yj2" secondAttribute="trailing" id="JPL-mf-iV1"/>
+                <constraint firstItem="bNj-OG-cfG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JhH-ys-xBB"/>
+                <constraint firstItem="bNj-OG-cfG" firstAttribute="top" secondItem="Bum-zt-NNn" secondAttribute="bottom" constant="30" id="NCz-Hd-c5U"/>
                 <constraint firstAttribute="trailing" secondItem="yhU-9D-To5" secondAttribute="trailing" id="UuT-fl-5gj"/>
+                <constraint firstItem="bNj-OG-cfG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Vy2-Ny-NGd"/>
                 <constraint firstAttribute="bottom" secondItem="tIk-4V-Yj2" secondAttribute="bottom" id="jkd-5W-Web"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -39,5 +65,7 @@
     <resources>
         <image name="bg_zbfx" width="16" height="16"/>
         <image name="launch_close" width="64" height="64"/>
+        <image name="launch_map_on" width="26" height="26"/>
+        <image name="room_button" width="250" height="44"/>
     </resources>
 </document>

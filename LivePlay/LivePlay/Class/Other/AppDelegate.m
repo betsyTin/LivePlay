@@ -10,6 +10,8 @@
 #import "BZYTabBarViewController.h"
 #import "BZYLocationManager.h"
 #import "BZYAdvertise.h"
+#import "AppDelegate+BZYUMeng.h"
+#import "BZYLoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +22,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    BZYTabBarViewController *mainVC = [[BZYTabBarViewController alloc]init];
+    [self initUMeng];
+    
+    UIViewController *mainVC;
+    if ([BZYLoginHelper isAutoLogin]) {
+        mainVC = [[BZYTabBarViewController alloc]init];
+    }else{
+        mainVC = [[BZYTabBarViewController alloc]init];
+       // mainVC = [[BZYLoginViewController alloc] init];
+    }
+    
     self.window.rootViewController = mainVC;
     
     [[BZYLocationManager sharedManager] getGPS:^(NSString *lat, NSString *lon) {
@@ -61,6 +72,16 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    BOOL result = [UMSocialSnsService handleOpenURL:url];
+    if (result == FALSE) {
+        //调用其他SDK，例如支付宝SDK等
+    }
+    return result;
+}
+
 
 
 @end

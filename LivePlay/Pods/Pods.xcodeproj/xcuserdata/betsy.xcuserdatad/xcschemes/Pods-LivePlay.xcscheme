@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '57C547A3FDBA6F416F4CA9CAB84466E5'
+               BlueprintIdentifier = '4745A461B710450C60218F094A796336'
                BlueprintName = 'Pods-LivePlay'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-LivePlay.a'>

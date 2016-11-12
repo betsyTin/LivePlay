@@ -26,13 +26,28 @@
 {
     _live = live;
     
-    [self.headView downloadImage:[NSString stringWithFormat:@"%@%@",IMAGE_HOST,live.creator.portrait] placeholder:@"default_room"];
+    
+    
+//    [self.headView downloadImage:[NSString stringWithFormat:@"%@%@",IMAGE_HOST,live.creator.portrait] placeholder:@"default_room"];
+//     [self.liveView downloadImage:[NSString stringWithFormat:@"%@%@",IMAGE_HOST,live.creator.portrait] placeholder:@"default_room"];
     
     self.nameLabel.text = live.creator.nick;
     self.locationLabel.text = live.city;
     self.onLineLabel.text = [@(live.onlineUsers) stringValue];//@()先转number类型，[]再转string类型
     
-    [self.liveView downloadImage:[NSString stringWithFormat:@"%@%@",IMAGE_HOST,live.creator.portrait] placeholder:@"default_room"];
+    if ([live.creator.nick isEqualToString:@"betsy"]) {
+        
+        self.headView.image = [UIImage  imageNamed:@"hehe.jpg"];
+        self.liveView.image = [UIImage  imageNamed:@"hehe.jpg"];
+        
+    } else {
+        
+        [self.headView downloadImage:[NSString stringWithFormat:@"%@%@",IMAGE_HOST,live.creator.portrait] placeholder:@"default_room"];
+        [self.liveView downloadImage:[NSString stringWithFormat:@"%@%@",IMAGE_HOST,live.creator.portrait] placeholder:@"default_room"];
+    }
+
+    
+   
 }
 
 
